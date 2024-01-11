@@ -4,6 +4,7 @@ import { TodolistService } from "./todolist-service.mjs";
 const service = new TodolistService();
 
 const server = http.createServer((request, response) => {
+    response.write("Running");
     response.setHeader('Content-Type', 'application/json');
 
     
